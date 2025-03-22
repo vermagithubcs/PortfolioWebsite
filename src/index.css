@@ -121,3 +121,6 @@ body{
 .big-text{
   padding: 10px;
 }
+.menubar li{
+  padding: 10px 15px;
+}

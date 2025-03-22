@@ -6,7 +6,7 @@ import Twitter from "../assets/twitter.png";
 const Footer = () => {
   return (
     <>
-      <div className="footer-page h-auto w-screen relative">
+      <div id="contact" className="footer-page h-auto w-screen relative">
         <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
           <h1 className="text-[15vw] uppercase text-center text-white opacity-20">Contact us</h1>
         </div>

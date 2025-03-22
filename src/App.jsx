@@ -2,8 +2,8 @@ import Header from "./Components/Header";
 import BigTextAnimation from "./Components/BigTextAnimation";
 import About from "./Components/About";
 import Footer from "./Components/Footer";
-import Projects from "./Components/Projects";
 import Services from "./Components/Services";
+import Work from "./Components/Work";
 const App = () => {
   return (
     <>
@@ -19,7 +19,7 @@ const App = () => {
         <About />
 
         {/* Works page  */}
-        <Projects />
+        <Work />
 
         {/* Services page  */}
         <Services />

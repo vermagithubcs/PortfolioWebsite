@@ -1,9 +1,8 @@
 import React from "react";
-
-const About = () => {
+const About = () =>{
   return (
     <>
-      <div className="about h-screen w-screen">
+      <div id="about" className="about h-screen w-screen">
         <div>
           <h1 className="border border-black text-black text-[13vw] text-center uppercase font-[TyproFace] tracking-tighter">
             About
@@ -18,6 +17,6 @@ const About = () => {
       </div>
     </>
   );
-};
+}
 
 export default About;
