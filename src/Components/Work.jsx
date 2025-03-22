@@ -13,10 +13,10 @@ const Work = () => {
     <>
       <div id="works" className="h-auto w-screen">
         <div className="text-center border border-black">
-          <h1 className="text-[15vw] font-[AtlassianSans]">Work</h1>
+          <h1 className="text-[10vw] font-[AtlassianSans]">Work</h1>
         </div>
         <div className="h-[60vh] w-full flex flex-col justify-center">
-        <div className="h-[40vh] w-full flex flex-col items-center justify-evenly text-5xl font-[AtlassianSans]">
+        <div className="h-auto w-full flex flex-col items-center justify-evenly text-[4vw] font-[AtlassianSans] text-nowrap">
             <h1 className="cursor-pointer hover:text-white hover:bg-black hover:h-32 hover:w-1/2 hover:text-center hover:flex hover:items-center hover:justify-center hover:rounded-xl">Netflix</h1>
             <h1 className="cursor-pointer hover:text-white hover:bg-black hover:h-32 hover:w-1/2 hover:text-center hover:flex hover:items-center hover:justify-center hover:rounded-xl">Twitter</h1>
             <h1 className="cursor-pointer hover:text-white hover:bg-black hover:h-32 hover:w-1/2 hover:text-center hover:flex hover:items-center hover:justify-center hover:rounded-xl">Admin.Dashboard</h1>

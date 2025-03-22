@@ -2,9 +2,9 @@ import React from "react";
 const About = () =>{
   return (
     <>
-      <div id="about" className="about h-screen w-screen">
+      <div id="about" className="about h-screen max-sm:h-60 w-screen">
         <div>
-          <h1 className="border border-black text-black text-[13vw] text-center uppercase font-[TyproFace] tracking-tighter">
+          <h1 className="border border-black text-black text-[10vw] text-center uppercase font-[TyproFace] tracking-tighter">
             About
           </h1>
         </div>

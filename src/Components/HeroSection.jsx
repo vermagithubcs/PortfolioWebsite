@@ -5,7 +5,7 @@ import BottomText from "./BottomText";
 import { gsap } from "gsap";
 import menuBar from "../assets/menu.png";
 import { Link } from "react-scroll";
-const HeroSection = ({scrollToAbout}) => {
+const HeroSection = () => {
   const[isOpen, setIsOpen] = useState(false);
   const toggleMenu = () =>{
     setIsOpen(!isOpen);
@@ -35,11 +35,22 @@ const HeroSection = ({scrollToAbout}) => {
             </li>
           </ul>
         <div className={` lg:hidden absolute top-20 right-0 text-center h-96 z-[1000] bg-gray-400 w-full border flex flex-col items-center justify-around rounded-2xl p-3 border-black space-y-2 ${isOpen ? 'block' : 'hidden'}`}>
-                <a href="#" className="block h-16  w-80 text-[3.5vw] rounded hover:bg-black hover:text-white">Home</a>
-                <a onClick={scrollToAbout} className="block h-16  w-80 text-[3.5vw] rounded  hover:bg-black hover:text-white">About</a>
-                <a href="#" className="block h-16  w-80 text-[3.5vw] rounded  hover:bg-black hover:text-white">Works</a>
-                <a href="#" className="block h-16  w-80 text-[3.5vw] rounded  hover:bg-black hover:text-white">Contact us</a>
-                <a href="#" className="block h-16  w-80 text-[3.5vw] rounded  hover:bg-black hover:text-white">Services</a>
+                <a className="block h-16  w-80 text-[3.5vw] rounded hover:bg-black hover:text-white">
+                <Link to="reCoderr" smooth={true} duration={800}>Home</Link>
+                </a>
+                <a className="block h-16  w-80 text-[3.5vw] rounded  hover:bg-black hover:text-white">
+                <Link to="about" smooth={true} duration={800}>About</Link>
+                </a>
+                <a className="block h-16  w-80 text-[3.5vw] rounded  hover:bg-black hover:text-white">
+                <Link to="works" smooth={true} duration={800}>Work</Link>
+                </a>
+                <a  className="block h-16  w-80 text-[3.5vw] rounded  hover:bg-black hover:text-white">
+                  <Link to="services" smooth={true} duration={800}>Services</Link>
+                </a>
+                <a  className="block h-16  w-80 text-[3.5vw] rounded  hover:bg-black hover:text-white">
+                <Link to="contact" smooth={true} duration={800}>Contact us</Link>
+                </a>
+               
             </div>
         </div>
       </div>
