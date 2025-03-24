@@ -14,22 +14,30 @@ const Footer = () => {
           <h1 className="text-[7vw] uppercase text-white text-center mb-8">reCoderr</h1>
           <p className="text-white text-[2vw] text-center mb-10">Design.Code.Creativity</p>
           <h1 className="text-white text-[4vw] text-nowrap heading-h1 text-center mb-10">Know More</h1>
-          <p className="text-[3vw] text-white text-nowrap uppercase text-center mb-8">
+          <p className="text-[2.5vw] text-white text-nowrap uppercase text-center mb-8">
             freelancer Services available:
           </p>
-          <p className="text-white text-nowrap text-[3vw] text-center mb-12">Gmail: vermadigital943@gmail.com</p>
+          <p className="text-white text-nowrap text-[2.5vw] text-center mb-12">Gmail: vermadigital943@gmail.com</p>
           <div className="social-media flex items-center max-md:flex-col justify-center gap-12 relative top-5">
             <div className="instagram p-2">
-              <img className="h-12 cursor-pointer hover:scale-110 transition-transform" src={Instagram} alt="Instagram logo" />
+              <a href="https://www.instagram.com/v.vikash1113/" target="_blank" rel="noopener noreferrer">
+                <img className="h-12 cursor-pointer hover:scale-110 transition-transform" src={Instagram} alt="Instagram logo" />
+              </a>
             </div>
             <div className="linkedin p-2">
-              <img className="h-12 cursor-pointer hover:scale-110 transition-transform" src={LinkedIn} alt="LinkedIn logo" />
+              <a href="https://www.linkedin.com/in/vikashvermadeveloper/" target="_blank" rel="noopener noreferrer">
+                <img className="h-12 cursor-pointer hover:scale-110 transition-transform" src={LinkedIn} alt="LinkedIn logo" />
+              </a>
             </div>
             <div className="Github p-2">
-              <img className="h-12 cursor-pointer hover:scale-110 transition-transform" src={Github} alt="Github logo" />
+              <a href="https://github.com/vermagithubcs" target="_blank" rel="noopener noreferrer">
+                <img className="h-12 cursor-pointer hover:scale-110 transition-transform" src={Github} alt="Github logo" />
+              </a>
             </div>
             <div className="Twitter p-2">
-              <img className="h-12 cursor-pointer bg-white rounded-md p-1.5 hover:scale-110 transition-transform" src={Twitter} alt="Twitter logo" />
+              <a href="https://x.com/verm3390" target="_blank" rel="noopener noreferrer">
+                <img className="h-12 cursor-pointer bg-white rounded-md p-1.5 hover:scale-110 transition-transform" src={Twitter} alt="Twitter logo" />
+              </a>
             </div>
           </div>
         </div>
