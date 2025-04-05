@@ -14,7 +14,7 @@ const HeroSection = () => {
     <>
       <div className="h-20 fixed top-0 left-0 z-1000 w-screen flex items-center justify-around">
         <div className="logo text-3xl bg-black text-white hover:bg-white hover:text-black h-16 rounded-2xl hover:border-2 hover:border-black w-40 flex items-center justify-center cursor-pointer max-md:text-[4vw]">
-        <h1><Link to="reCoderr" smooth={true} duration={800}>reCoderr</Link></h1>
+        <h1><Link to="reCoderr" smooth={true} duration={800}>Vikash</Link></h1>
         </div>
         <div className="text">
           <div className="menubar">

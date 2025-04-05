@@ -1,23 +1,30 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import coderr from "../assets/coderr.avif"
+import designer from "../assets/designer.avif"
+import problem from "../assets/problemsolver.avif"
+import gsap from "gsap";
 
 const Services = () => {
   return (
     <>
-      <div id="services" className="h-screen max-lg:h-auto w-screen">
+      <div id="services" className="max-h-auto max-lg:h-auto w-screen">
         <div>
-          <h1 className="text-[10vw] text-center border border-b-black font-[AtlassianSans]">
+          <h1 className="text-[8vw] text-center border border-b-black font-[AtlassianSans]">
             Services
           </h1>
         </div>
-        <div className="flex max-lg:flex-col border border-black">
-          <div className="h-80 font-[TyproFace] flex items-center justify-center cursor-pointer  w-1/3 max-lg:w-full border border-black">
-            <h1 className="text-[3.5vw] hover:border-b-2 hover:border-black">Coderr</h1>
+        <div className="flex max-md:flex-col items-center justify-around h-screen max-md:h-[150vh] border border-black">
+          <div className="h-auto font-[TyproFace] flex items-center justify-center cursor-pointer w-1/4 max-md:w-1/2 relative">
+            <img src={coderr} alt="Coderr" className=" w-full h-auto object-cover rounded-2xl" />
+            <h1 className="text-[3.5vw] flex justify-center items-center text-white absolute">Coderr</h1>
           </div>
-          <div className="h-80 font-[TyproFace] flex items-center justify-center max-lg:w-full  w-1/3 border border-black">
-            <h1 className="text-[3.5vw] hover:border-b-2 hover:border-black cursor-pointer">DesiGner</h1>
+          <div className="h-auto font-[TyproFace] flex items-center justify-center cursor-pointer w-1/4 max-md:w-1/2  relative">
+            <img src={designer} alt="Designer" className="w-full h-auto object-cover rounded-2xl" />
+            <h1 className="text-[3.5vw] cursor-pointer absolute text-white">DesiGner</h1>
           </div>
-          <div className="h-80 font-[TyproFace] flex items-center justify-center max-lg:w-full  w-1/3 border border-black">
-            <h1 className="text-[3.5vw] text-nowrap hover:border-b-2 hover:border-black cursor-pointer">Problem Solver</h1>
+          <div className="h-auto font-[TyproFace] flex items-center justify-center cursor-pointer w-1/4 max-md:w-1/2 relative">
+            <img src={problem} alt="Problem Solver" className="w-full h-auto object-cover rounded-2xl" />
+            <h1 className="text-[3vw] absolute text-white text-nowrap cursor-pointer">Problem Solver</h1>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const Footer = () => {
           <h1 className="text-[15vw] uppercase text-center text-white opacity-20">Contact us</h1>
         </div>
         <div className="max-md:transform-none absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 footer-heading border border-white p-12  bg-black bg-opacity-50">
-          <h1 className="text-[7vw] uppercase text-white text-center mb-8">reCoderr</h1>
+          <h1 className="text-[5vw] uppercase text-white text-center mb-8">Vikash</h1>
           <p className="text-white text-[2vw] text-center mb-10">Design.Code.Creativity</p>
           <h1 className="text-white text-[4vw] text-nowrap heading-h1 text-center mb-10">Know More</h1>
           <p className="text-[2.5vw] text-white text-nowrap uppercase text-center mb-8">
