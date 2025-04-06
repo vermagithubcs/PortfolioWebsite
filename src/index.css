@@ -124,3 +124,7 @@ body{
 .menubar li{
   padding: 10px 15px;
 }
+/* Navbar Page  */
+.block-nav a{
+  padding: 10px 0;
+}
