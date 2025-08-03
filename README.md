@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💼 Vikash Verma — Portfolio Website (Next.js)
 
-## Getting Started
+Welcome to my personal portfolio website built using **Next.js**, where I showcase my skills as a **Frontend Developer** and **Figma Designer**, my real-world projects, and the organizations I've worked with.
 
-First, run the development server:
+## 🌐 Live Website
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔗 [Visit Portfolio](https://www.coderrr.me)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🧰 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [GSAP](https://gsap.com/)
+- **Icons**: [Lucide Icons](https://lucide.dev/)
+- **Fonts**: Atlassian Sans
+- **Design Tool**: [Figma](https://figma.com/)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ⚡ Lightning-fast and SEO-optimized with Next.js
+- 📱 Fully responsive design across all screen sizes
+- 🎨 Smooth animations powered by GSAP
+- 👤 Hero section with typewriter and custom cursor
+- 🧠 About Me section with animated timeline
+- 🧰 Project gallery with interactive hover effects
+- 📨 Contact section with integrated email and social links
+- 🔗 Scroll-based navigation with animated indicators
+- 🎯 Highlighted keywords and animated headings
+- 🌈 Dynamic text effects with theme-aware styles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 💼 Experience & Highlights
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🧑‍💻 Worked at **DevSummit2025** and **Brainitix** as a **Frontend Developer**
+- 💡 Participated as a **Frontend Developer & Volunteer** in **DevSummit2025 Hackathon**
+- 🔥 Passionate about building real-world, impactful products and learning daily
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---

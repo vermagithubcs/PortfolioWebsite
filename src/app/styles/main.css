@@ -1,0 +1,127 @@
+@font-face {
+    font-family: font1;
+    src: url('../Fonts/Font\ 1.ttf');
+  }
+  @font-face {
+    font-family: TyproFace;
+    src: url('../Fonts/AtlassianSans-latin.ttf');
+  }
+  @font-face {
+    font-family: AtlassianSans;
+    src: url('../Fonts/madefor-text.var.original.ttf');
+  }
+  *{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  [data-scroll-container] {
+    overflow: hidden;
+  }
+  
+  [data-scroll-section] {
+    will-change: transform;
+  }
+  /* Hero Section  */
+  .hero-section{
+    padding: 15px 20px;
+  }
+  
+  /* Header section  */
+  .header-page{
+    padding: 40px;
+  }
+  .icon{
+    color: black;
+  }
+  .menu{
+    margin-left: 10px;
+  }
+  /* Hero Section  */
+  .logo-image{
+    padding: 20px;
+    margin-left: 20px;
+  }
+  .text ul{
+    padding: 10px 10px;
+  }
+  /* Main text page  */
+  .main-text{
+    padding: 50px;
+  }
+  /* Bottom text page  */
+  .bottom-text{
+    padding: 60px;
+  }
+  .image{
+    padding: 20px;
+  }
+  #titleDiv{
+    width: fit-content !important;
+  }
+  #page-1{
+    position: relative;
+    perspective: 1000px;
+  }
+  /* BigTextAnimation */
+  .textAnimation{
+    padding: 30px;
+  }
+  #section2{
+    position: relative;
+    perspective: 1000px;
+  }
+  #rotateText{
+    transform-origin: 100% 70%;
+  }
+  /* About page  */
+  .about{
+    padding: 10px 20px;
+  }
+  .about-image-2{
+    padding: 10px 20px;
+  }
+  /* soft skills page  */
+  .soft-skills{
+    padding: 10px 20px;
+  }
+  .text-content{
+    padding: 10px;
+  }
+  /* Footer page  */
+  .footer-page{
+    padding: 10px 20px;
+  }
+  .footer-heading{
+    padding: 40px;
+  }
+  .heading-h1{
+    padding: 50px;
+  }
+  
+  .textAnimation{
+    padding: 1rem 0;
+  }
+  .scrolling-text{
+    padding-right: 100%;
+  }
+  
+  /* Responsive Design css  */
+  /* About page  */
+  .big-text{
+    padding: 10px;
+  }
+  .menubar li{
+    padding: 10px 15px;
+  }
+  /* Navbar Page  */
+  .block-nav a{
+    padding: 10px 0;
+  }
