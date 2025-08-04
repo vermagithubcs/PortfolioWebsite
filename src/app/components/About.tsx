@@ -16,7 +16,7 @@ const About = () => {
         {/* Description Text */}
         <div className="text-about flex items-center justify-center w-full px-4 py-6">
           <h1 className="big-text text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-center leading-relaxed max-w-4xl">
-            I'm Vikash Verma, a
+            {"I'm"} Vikash Verma, a
             <span className="text-blue-600 font-semibold">
               {" "}
               Frontend Developer{" "}
