@@ -30,7 +30,20 @@ const HeroSection = () => {
               </Link>
             </li>
           ))}
+        {/* Resume Download Link  */}
+        <li>
+    <a
+      href="/resume.pdf"
+      target="_blank"
+      download
+      className="px-4 py-2 rounded-xl bg-green-600 text-white  hover:bg-white hover:text-green-600 hover:border-2 hover:border-green-600 transition cursor-pointer"
+    >
+      Get Resume
+    </a>
+  </li>
         </ul>
+
+
 
         {/* Mobile Menu Icon - only visible on small screens */}
         <div className="block lg:hidden z-[1001]">
@@ -52,7 +65,7 @@ const HeroSection = () => {
                   to={section}
                   smooth={true}
                   duration={800}
-                  className="w-full text-center py-2 text-base font-medium hover:bg-black hover:text-white rounded transition"
+                  className="w-full text-center py-2 text-base font-medium hover:bg-black hover:text-white rounded transition cursor-pointer"
                   onClick={() => setIsOpen(false)}
                 >
                   {section === "reCoderr"
@@ -63,6 +76,16 @@ const HeroSection = () => {
                 </Link>
               )
             )}
+            <li>
+    <a
+      href="/resume.pdf"
+      target="_blank"
+      download
+      className="px-4 py-2 rounded-xl bg-green-600 text-white  hover:bg-white hover:text-green-600 hover:border-2 hover:border-green-600 transition cursor-pointer"
+    >
+      Get Resume
+    </a>
+  </li>
           </div>
         )}
       </div>
