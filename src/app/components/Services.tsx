@@ -3,50 +3,41 @@ import React from "react";
 
 const Services = () => {
   return (
-    <>
-      <div id="services" className="w-screen min-h-screen px-4 py-8 bg-gray-100">
-  {/* Section Heading */}
-  <div>
-    <h1 className="text-[8vw] text-center border-b-2 border-black font-[AtlassianSans] mb-8">
-      Services
-    </h1>
-  </div>
+    <div id="services" className="w-full min-h-screen bg-gray-100 py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+      {/* Section Heading */}
+      <div className="mb-12 sm:mb-16">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center font-[AtlassianSans]">
+          What I Know?
+        </h1>
+      </div>
 
-  {/* Responsive Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    {/* Frontend Development */}
-    <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center">
-      <h2 className="text-xl font-semibold text-blue-600">Frontend Development</h2>
-      <p className="mt-2 text-gray-600">Building responsive and performant interfaces using React, JavaScript, and Tailwind CSS.</p>
+      {/* Responsive Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 max-w-7xl mx-auto">
+        {/* Frontend Development */}
+        <div className="bg-white p-6 sm:p-8 w-full h-auto min-h-[240px] sm:min-h-[260px] flex flex-col items-center justify-center rounded-xl shadow-md hover:shadow-2xl hover:scale-105 transition duration-300 text-center cursor-pointer">
+          <h2 className="text-xl sm:text-2xl font-semibold text-blue-600">Frontend Engineer</h2>
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-600 leading-relaxed">
+            Building responsive, scalable websites using React.js, Next.js and TailwindCSS.
+          </p>
+        </div>
+
+        {/* Animation Website (GSAP) */}
+        <div className="bg-white p-6 sm:p-8 w-full h-auto min-h-[240px] sm:min-h-[260px] flex flex-col items-center justify-center rounded-xl shadow-md hover:shadow-2xl hover:scale-105 transition duration-300 text-center cursor-pointer">
+          <h2 className="text-xl sm:text-2xl font-semibold text-green-600">GSAP Animations</h2>
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-600 leading-relaxed">
+            Building smooth websites using GSAP animation library.
+          </p>
+        </div>
+
+        {/* Three.js Web Experience */}
+        <div className="bg-white p-6 sm:p-8 w-full h-auto min-h-[240px] sm:min-h-[260px] flex flex-col items-center justify-center rounded-xl shadow-md hover:shadow-2xl hover:scale-105 transition duration-300 text-center cursor-pointer">
+          <h2 className="text-xl sm:text-2xl font-semibold text-yellow-600">Three.js Model</h2>
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-600 leading-relaxed">
+            Creating immersive 3D experiences using Three.js and WebGL inside your frontend apps.
+          </p>
+        </div>
+      </div>
     </div>
-
-    {/* Animation Website (GSAP) */}
-    <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center">
-      <h2 className="text-xl font-semibold text-green-600">GSAP Animations</h2>
-      <p className="mt-2 text-gray-600">Smooth animations and scroll-based transitions using GreenSock Animation Platform (GSAP).</p>
-    </div>
-
-    {/* Spline 3D Integration */}
-    <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center">
-      <h2 className="text-xl font-semibold text-purple-600">Spline 3D Integration</h2>
-      <p className="mt-2 text-gray-600">Embedding interactive 3D models into websites using Spline and React.</p>
-    </div>
-
-    {/* Three.js Web Experience */}
-    <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center">
-      <h2 className="text-xl font-semibold text-yellow-600">Three.js Web Experiences</h2>
-      <p className="mt-2 text-gray-600">Creating immersive 3D experiences using Three.js and WebGL inside your frontend apps.</p>
-    </div>
-
-    {/* Skipper UI Components */}
-    <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center">
-      <h2 className="text-xl font-semibold text-rose-600">Skipper UI Styling</h2>
-      <p className="mt-2 text-gray-600">Crafting beautiful UIs using pre-styled Skipper UI components for fast development.</p>
-    </div>
-  </div>
-</div>
-
-    </>
   );
 };
 

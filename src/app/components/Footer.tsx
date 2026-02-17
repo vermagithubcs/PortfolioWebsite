@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Background from "../assets/Background.jpg";
-import FlipLink from "../../components/ui/text-effect-flipper";
 const Footer = () => {
   return (
     <>
@@ -17,22 +16,22 @@ const Footer = () => {
         </div>
 
         {/* Contact Links */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-4 z-20">
-          <div className="text-white text-lg md:text-xl font-semibold max-sm:text-base">
-            <FlipLink href="https://github.com/vermagithubcs">Github</FlipLink>
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-4 z-20 uppercase">
+          <div className="text-white text-lg lg:text-5xl md:text-3xl font-semibold max-sm:text-xl">
+            <a href="https://github.com/vermagithubcs" target="_blank">Github</a>
           </div>
-          <div className="text-white text-lg md:text-xl font-semibold max-sm:text-base">
-            <FlipLink href="https://www.linkedin.com/in/vikashvermadeveloper/">
+          <div className="text-white text-lg lg:text-5xl md:text-3xl font-semibold max-sm:text-xl">
+            <a href="https://www.linkedin.com/in/vikashvermadeveloper/" target="_blank">
               LinkedIn
-            </FlipLink>
+            </a>
           </div>
-          <div className="text-white text-lg md:text-xl font-semibold max-sm:text-base">
-            <FlipLink href="https://www.instagram.com/coder_vikash/">
+          <div className="text-white text-lg lg:text-5xl md:text-3xl font-semibold max-sm:text-xl">
+            <a href="https://www.instagram.com/animxstudios/" target="_blank">
               Instagram
-            </FlipLink>
+            </a>
           </div>
-          <div className="text-white text-lg md:text-xl font-semibold max-sm:text-base">
-            <FlipLink href="https://x.com/verm3390">X</FlipLink>
+          <div className="text-white text-lg lg:text-5xl md:text-3xl font-semibold max-sm:text-xl">
+            <a href="https://x.com/verm3390" target="_blank">X</a>
           </div>
         </div>
 

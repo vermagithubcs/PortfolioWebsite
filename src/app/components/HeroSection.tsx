@@ -18,7 +18,7 @@ const HeroSection = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center gap-10 text-lg font-mono">
-          {["about", "works", "services", "contact"].map((section) => (
+          {["about", "works", "contact"].map((section) => (
             <li
               key={section}
               className="px-4 py-2 bg-black text-white rounded-xl hover:bg-white hover:text-black hover:border-2 hover:border-black transition cursor-pointer"
