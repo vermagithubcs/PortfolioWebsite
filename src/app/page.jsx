@@ -1,8 +1,8 @@
-import Header from "../app/components/Header";
-import About from "../app/components/About";
-import Footer from "../app/components/Footer";
-import Services from "../app/components/Services";
-import Work from "../app/components/Work";
+import Header from "./components/Header";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Services from "./components/Services";
+import Work from "./components/Work";
 import React from "react";
 import TechStack from "./components/TechStack";
 const App = () => {

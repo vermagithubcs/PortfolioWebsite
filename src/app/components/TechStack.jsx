@@ -14,7 +14,7 @@ const TechStack = () => {
     if (!techRef.current) return;
     const tech = techRef.current.children;
     Array.from(tech).forEach((box) => {
-      const element = box as HTMLElement;
+      const element = box;
       element.addEventListener("mousemove", (e) => {
         gsap.from(e.currentTarget, {
           y: -10,
@@ -33,7 +33,7 @@ const TechStack = () => {
   })
 
   return (
-    <div className='lg:min-h-1/2 md:min-h-screen w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8'>
+    <div id="techStack" className='lg:min-h-1/2 md:min-h-screen w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8'>
       <h1 className='text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-12 sm:mb-16'>
         Tech Stack
       </h1>
