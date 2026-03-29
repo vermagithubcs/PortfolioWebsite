@@ -1,7 +1,4 @@
 'use client';
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { useRef } from "react";
 import { RiJavascriptFill, RiNextjsFill, RiReactjsFill, RiTailwindCssFill } from "react-icons/ri";
 import Figma from "../assets/figma.png"
 import Gsap from "../assets/gsap.png"
@@ -41,27 +38,12 @@ const techItems = [
 ];
 
 const TechStack = () => {
-  const techRef = useRef(null)
-  
-  useGSAP(() => {
-    if (!techRef.current) return;
-    const cards = techRef.current.querySelectorAll("[data-tech-card]");
-
-    gsap.from(cards, {
-      y: 30,
-      opacity: 0,
-      duration: 0.55,
-      stagger: 0.08,
-      ease: "power2.out",
-    });
-  }, []);
-
   return (
-    <section id="techStack" className='relative w-full py-16 sm:py-20 px-4 sm:px-6 lg:px-8'>
-      <div className="absolute -top-12 left-6 sm:left-20 h-44 w-44 rounded-full bg-cyan-400/15 blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-8 right-4 sm:right-16 h-44 w-44 rounded-full bg-rose-400/15 blur-3xl pointer-events-none" />
+    <section id="techStack" className='relative isolate w-full py-16 sm:py-20 px-4 sm:px-6 lg:px-8'>
+      <div className="absolute -top-12 left-6 sm:left-20 h-44 w-44 rounded-full bg-cyan-400/12 blur-3xl pointer-events-none -z-10" />
+      <div className="absolute -bottom-8 right-4 sm:right-16 h-44 w-44 rounded-full bg-rose-400/12 blur-3xl pointer-events-none -z-10" />
 
-      <div className="text-center mb-10 sm:mb-14">
+      <div className="relative z-10 text-center mb-10 sm:mb-14">
         <p className="uppercase tracking-[0.25em] text-xs sm:text-sm text-cyan-300/85 mb-3">Toolkit</p>
         <h1 className='text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-white'>
           Tech Stack
@@ -72,8 +54,7 @@ const TechStack = () => {
       </div>
       
       <div 
-        ref={techRef} 
-        className="techstack grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 max-w-7xl mx-auto"
+        className="relative z-10 techstack grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-6 max-w-7xl mx-auto"
       >
         {techItems.map((item) => (
           <article
