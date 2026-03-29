@@ -93,9 +93,9 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="fixed left-0 z-[2000] w-full px-4 sm:px-10 py-4 sm:py-6 flex items-center justify-between bg-black/65 backdrop-blur-xl border-b border-white/10">
+      <div className="fixed left-0 z-[2000] w-full px-4 sm:px-10 py-3 sm:py-6 flex items-center justify-between bg-black/65 backdrop-blur-xl border-b border-white/10">
         {/* Logo */}
-        <div className="text-2xl sm:text-4xl uppercase font-semibold cursor-pointer tracking-tight text-white">
+        <div className="text-xl sm:text-4xl uppercase font-semibold cursor-pointer tracking-tight text-white">
           <Link to="reCoderr" smooth={true} duration={800}>
             Vikash
           </Link>
@@ -123,10 +123,10 @@ const HeroSection = () => {
         {/* humburger Menu  */}
         <div
           onClick={toggleMenu}
-          className="hum relative z-[1000] md:hidden bg-white/10 hover:bg-white/20 p-3 rounded-full text-white border border-white/20 transition"
+          className="hum relative z-[1000] md:hidden bg-white/10 hover:bg-white/20 p-2.5 rounded-full text-white border border-white/20 transition"
           aria-label="Toggle menu"
         >
-          {open ? <RxCross1 className="cursor-pointer text-2xl" /> : <FiMenu className="cursor-pointer text-2xl" />}
+          {open ? <RxCross1 className="cursor-pointer text-xl" /> : <FiMenu className="cursor-pointer text-xl" />}
         </div>
         {open && (
           <div
@@ -138,16 +138,16 @@ const HeroSection = () => {
         {/* Mobile Menu */}
         <div
           ref={humRef}
-          className="fixed h-screen w-full sm:w-96 top-0 right-0 bg-[#060709] text-white z-[1000] border-l border-white/10 md:hidden"
+          className="fixed h-[100svh] w-full sm:w-96 top-0 right-0 bg-[#060709] text-white z-[1000] border-l border-white/10 md:hidden"
         >
-          <ul className="p-5">
+          <ul className="p-5 h-full overflow-y-auto">
             <RxCross1
               onClick={toggleMenu}
-              className="text-4xl cursor-pointer"
+              className="text-3xl cursor-pointer"
             />
             <div
               ref={textRef}
-              className="flex flex-col gap-7 px-4 sm:px-8 py-10 justify-start h-screen text-3xl sm:text-4xl uppercase"
+              className="flex flex-col gap-6 px-2 sm:px-4 py-8 justify-start min-h-[80svh] text-2xl sm:text-4xl uppercase"
             >
               {navItems.map((item) => (
                 <Link
