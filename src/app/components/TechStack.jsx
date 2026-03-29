@@ -7,72 +7,89 @@ import Figma from "../assets/figma.png"
 import Gsap from "../assets/gsap.png"
 import Image from "next/image";
 
+const techItems = [
+  {
+    name: "React.js",
+    level: "Advanced",
+    icon: <RiReactjsFill className="text-cyan-300 text-5xl sm:text-6xl" />,
+  },
+  {
+    name: "Next.js",
+    level: "Advanced",
+    icon: <RiNextjsFill className="text-cyan-300 text-5xl sm:text-6xl" />,
+  },
+  {
+    name: "JavaScript",
+    level: "Advanced",
+    icon: <RiJavascriptFill className="text-cyan-300 text-5xl sm:text-6xl" />,
+  },
+  {
+    name: "TailwindCSS",
+    level: "Advanced",
+    icon: <RiTailwindCssFill className="text-cyan-300 text-5xl sm:text-6xl" />,
+  },
+  {
+    name: "GSAP",
+    level: "Animation",
+    icon: <Image className="h-14 w-14 sm:h-16 sm:w-16" src={Gsap} alt="GSAP" />,
+  },
+  {
+    name: "Figma",
+    level: "Design",
+    icon: <Image className="h-14 w-14 sm:h-16 sm:w-16" src={Figma} alt="Figma" />,
+  },
+];
+
 const TechStack = () => {
   const techRef = useRef(null)
   
   useGSAP(() => {
     if (!techRef.current) return;
-    const tech = techRef.current.children;
-    Array.from(tech).forEach((box) => {
-      const element = box;
-      element.addEventListener("mousemove", (e) => {
-        gsap.from(e.currentTarget, {
-          y: -10,
-          duration: 0.3,
-          ease: 'power1.in'
-        })
-      })
-      element.addEventListener("mouseleave", (e) => {
-        gsap.to(e.currentTarget, {
-          y: 0,
-          duration: 0.5,
-          ease: 'power1.inOut'
-        })
-      })
-    })
-  })
+    const cards = techRef.current.querySelectorAll("[data-tech-card]");
+
+    gsap.from(cards, {
+      y: 30,
+      opacity: 0,
+      duration: 0.55,
+      stagger: 0.08,
+      ease: "power2.out",
+    });
+  }, []);
 
   return (
-    <div id="techStack" className='lg:min-h-1/2 md:min-h-screen w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8'>
-      <h1 className='text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-12 sm:mb-16'>
-        Tech Stack
-      </h1>
+    <section id="techStack" className='relative w-full py-16 sm:py-20 px-4 sm:px-6 lg:px-8'>
+      <div className="absolute -top-12 left-6 sm:left-20 h-44 w-44 rounded-full bg-cyan-400/15 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-8 right-4 sm:right-16 h-44 w-44 rounded-full bg-rose-400/15 blur-3xl pointer-events-none" />
+
+      <div className="text-center mb-10 sm:mb-14">
+        <p className="uppercase tracking-[0.25em] text-xs sm:text-sm text-cyan-300/85 mb-3">Toolkit</p>
+        <h1 className='text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-white'>
+          Tech Stack
+        </h1>
+        <p className="mt-4 text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
+          Core technologies I use to build performant, animated, and user-focused web experiences.
+        </p>
+      </div>
       
       <div 
         ref={techRef} 
-        className="techstack grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto justify-items-center"
+        className="techstack grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 max-w-7xl mx-auto"
       >
-        <div className="reactjs h-36 w-36 sm:h-40 sm:w-40 bg-black rounded-2xl flex flex-col items-center justify-center cursor-pointer hover:scale-105 hover:bg-black/90 transition-transform duration-300">
-          <RiReactjsFill color='aqua' size={60} className="sm:w-20 sm:h-20" />
-          <h1 className='text-blue-400 text-base sm:text-xl mt-2'>React js</h1>
-        </div>
-        
-        <div className="reactjs h-36 w-36 sm:h-40 sm:w-40 bg-black rounded-2xl flex flex-col items-center justify-center cursor-pointer hover:scale-105 hover:bg-black/90 transition-transform duration-300">
-          <RiNextjsFill color='aqua' size={60} className="sm:w-20 sm:h-20" />
-          <h1 className='text-blue-400 text-base sm:text-xl mt-2'>Next js</h1>
-        </div>
-        
-        <div className="reactjs h-36 w-36 sm:h-40 sm:w-40 bg-black rounded-2xl flex flex-col items-center justify-center cursor-pointer hover:scale-105 hover:bg-black/90 transition-transform duration-300">
-          <RiJavascriptFill color='aqua' size={60} className="sm:w-20 sm:h-20" />
-          <h1 className='text-blue-400 text-base sm:text-xl mt-2'>JavaScript</h1>
-        </div>
-        
-        <div className="reactjs h-36 w-36 sm:h-40 sm:w-40 bg-black rounded-2xl flex flex-col items-center justify-center cursor-pointer hover:scale-105 hover:bg-black/90 transition-transform duration-300">
-          <RiTailwindCssFill color='aqua' size={60} className="sm:w-20 sm:h-20" />
-          <h1 className='text-blue-400 text-base sm:text-xl mt-2'>TailwindCSS</h1>
-        </div>
-        
-        <div className="reactjs h-36 w-36 sm:h-40 sm:w-40 bg-black rounded-2xl flex flex-col items-center justify-center cursor-pointer hover:scale-105 hover:bg-black/90 transition-transform duration-300">
-          <Image className="h-16 w-16 sm:h-20 sm:w-20" src={Gsap} alt="gsap" />
-          <h1 className='text-blue-400 text-base sm:text-xl mt-2'>GSAP</h1>
-        </div>
-        
-        <div className="reactjs h-36 w-36 sm:h-40 sm:w-40 bg-black rounded-2xl flex flex-col items-center justify-center cursor-pointer hover:scale-105 hover:bg-black/90 transition-transform duration-300">
-          <Image className="h-16 w-16 sm:h-20 sm:w-20" src={Figma} alt="figma" />
-          <h1 className='text-blue-400 text-base sm:text-xl mt-2'>Figma</h1>
-        </div>
+        {techItems.map((item) => (
+          <article
+            key={item.name}
+            data-tech-card
+            className="group relative min-h-48 sm:min-h-52 rounded-2xl border border-white/15 bg-white/5 backdrop-blur-sm p-4 sm:p-5 flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:border-cyan-300/45 hover:shadow-[0_12px_32px_rgba(34,211,238,0.14)]"
+          >
+            <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-b from-cyan-400/10 via-transparent to-transparent" />
+
+            <div className="relative mb-3">{item.icon}</div>
+            <h2 className='relative text-cyan-200 text-base sm:text-lg font-semibold'>{item.name}</h2>
+            <p className="relative mt-1 text-xs sm:text-sm text-slate-400 uppercase tracking-widest">{item.level}</p>
+          </article>
+        ))}
       </div>
-    </div>
+    </section>
   )
 }
 

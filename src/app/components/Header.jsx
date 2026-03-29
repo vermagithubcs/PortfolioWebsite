@@ -41,16 +41,16 @@ const Header = () => {
   }, []);
 
   return (
-    <div id="reCoderr" className="relative w-full h-screen overflow-hidden">
+    <div id="reCoderr" className="relative w-full h-screen overflow-hidden bg-transparent">
       {/* Hero Section Navbar */}
       <HeroSection />
 
       {/* Centered Text */}
       <div className="absolute inset-0 flex flex-col items-center justify-center font-[AtlassianSans] text-center px-4 sm:px-6">
-        <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase z-10 leading-tight">
+        <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase z-10 leading-tight text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.15)]">
           {displayText}
         </h1>
-        <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mt-2 sm:mt-4">
+        <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mt-2 sm:mt-4 text-cyan-300/90">
           / Coderr
         </h2>
       </div>
@@ -60,7 +60,7 @@ const Header = () => {
         <Link to="about" smooth={true} duration={1000}>
           <Image
             ref={ArrowRef}
-            className="h-6 sm:h-8 md:h-10 lg:h-12 w-auto cursor-pointer animate-bounce"
+            className="h-6 sm:h-8 md:h-10 lg:h-12 w-auto cursor-pointer animate-bounce brightness-0 invert"
             src={Arrow}
             alt="Down Arrow"
           />

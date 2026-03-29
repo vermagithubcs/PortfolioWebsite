@@ -6,103 +6,98 @@ const Work = () => {
     {
       name: "ToolAura",
       src: "https://www.toolaura.in/",
+      year: "2026",
+      role: "Full Stack",
+      impact: "40+ utility tools in one platform",
       description:
         "A comprehensive multi-tool web application featuring PDF converters, image compressors, and developer tools",
       tags: ["Next.js", "React", "TailwindCSS"],
-      gradient: "from-blue-500 to-purple-600",
+      gradient: "from-cyan-500/80 via-cyan-300/20 to-slate-900",
     },
     {
-      name: "DevSummit 2025",
-      src: "https://devsummit.vercel.app/",
-      description:
-        "Modern event website with smooth animations and interactive 3D elements",
-      tags: ["Three.js", "GSAP", "Next.js"],
-      gradient: "from-green-500 to-teal-600",
-    },
-    {
-      name: "GTA 6 Concept",
+      name: "GTA 6",
       src: "https://gta-6-sepia.vercel.app/",
+      year: "2025",
+      role: "Frontend + Motion",
+      impact: "Immersive animation-first experience",
       description:
         "Interactive gaming website showcase with immersive design and animations",
       tags: ["React", "GSAP", "WebGL"],
-      gradient: "from-orange-500 to-red-600",
+      gradient: "from-rose-500/80 via-rose-300/20 to-slate-900",
     },
   ];
 
   return (
-    <div id="works" className="w-full min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <section id="works" className="relative w-full min-h-screen py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="absolute -top-16 left-8 h-56 w-56 rounded-full bg-cyan-400/10 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-20 right-6 h-64 w-64 rounded-full bg-rose-400/10 blur-3xl pointer-events-none" />
+
       {/* Title Section */}
-      <div className="text-center mb-12 sm:mb-16">
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-[AtlassianSans] font-bold">
-          Featured Work
+      <div className="text-center mb-12 sm:mb-16 relative z-10">
+        <p className="uppercase tracking-[0.25em] text-xs sm:text-sm text-cyan-300/85 mb-3">Featured Projects</p>
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-[AtlassianSans] font-bold text-white">
+          Work Highlights
         </h1>
-        <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
-          Explore my recent projects showcasing modern web development
+        <p className="mt-4 text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto px-4">
+          Two projects that represent my strongest work across product thinking, frontend architecture, and motion.
         </p>
       </div>
 
       {/* Projects Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
         {projects.map((project, idx) => (
-          <a
-            key={idx}
-            href={project.src}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+          <article
+            key={project.name}
+            className="group relative rounded-3xl border border-white/15 bg-white/5 overflow-hidden backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:border-cyan-300/45 hover:shadow-[0_16px_40px_rgba(34,211,238,0.2)]"
           >
-            {/* Gradient Background */}
-            <div
-              className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-90 group-hover:opacity-100 transition-opacity duration-500`}
-            ></div>
+            <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-70 group-hover:opacity-100 transition-opacity duration-500`} />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(255,255,255,0.22),transparent_35%)]" />
 
-            {/* Content */}
-            <div className="relative z-10 p-6 sm:p-8 h-full flex flex-col justify-between min-h-[280px] sm:min-h-[320px]">
-              {/* Project Number */}
-              <div className="text-white/40 text-6xl sm:text-7xl font-bold absolute top-4 right-4 sm:top-6 sm:right-6">
-                0{idx + 1}
+            <div className="relative z-10 p-6 sm:p-8 min-h-[330px] flex flex-col">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.22em] text-white/80">Project 0{idx + 1}</p>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-white mt-2">{project.name}</h2>
+                </div>
+                <span className="text-xs sm:text-sm px-3 py-1.5 rounded-full border border-white/30 bg-black/25 text-white/90 uppercase tracking-wider">
+                  {project.year}
+                </span>
               </div>
 
-              {/* Project Info */}
-              <div className="mt-8 sm:mt-12">
-                <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:scale-105 transition-transform duration-300">
-                  {project.name}
-                </h2>
-                <p className="text-white/90 text-sm sm:text-base leading-relaxed mb-4 sm:mb-6">
-                  {project.description}
-                </p>
-              </div>
+              <p className="mt-4 text-sm sm:text-base text-white/90 leading-relaxed">{project.description}</p>
 
-              {/* Tags */}
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag, tagIdx) => (
+              <div className="mt-5 flex flex-wrap gap-2">
+                <span className="text-xs sm:text-sm rounded-full border border-white/30 bg-black/30 px-3 py-1.5 text-white/90 uppercase tracking-wider">
+                  {project.role}
+                </span>
+                {project.tags.map((tag) => (
                   <span
-                    key={tagIdx}
-                    className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm rounded-full border border-white/30"
+                    key={tag}
+                    className="text-xs sm:text-sm rounded-full border border-white/30 bg-black/30 px-3 py-1.5 text-white/90"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
 
-              {/* Hover Arrow */}
-              <div className="absolute bottom-6 right-6 sm:bottom-8 sm:right-8 text-white opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
-                <svg
-                  className="w-6 h-6 sm:w-8 sm:h-8"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              <div className="mt-6 rounded-xl border border-white/20 bg-black/25 px-4 py-3">
+                <p className="text-xs uppercase tracking-wider text-cyan-200/85">Impact</p>
+                <p className="text-sm sm:text-base text-white mt-1">{project.impact}</p>
+              </div>
+
+              <div className="mt-auto pt-6">
+                <a
+                  href={project.src}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-white border border-white/35 rounded-xl px-4 py-2.5 bg-black/30 hover:bg-white/30 hover:text-black transition-all duration-300"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
+                  Open Project
+                  <span aria-hidden="true">↗</span>
+                </a>
               </div>
             </div>
-          </a>
+          </article>
         ))}
       </div>
 
@@ -112,12 +107,12 @@ const Work = () => {
           href="https://github.com/vermagithubcs"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-black text-white rounded-xl text-base sm:text-lg font-semibold hover:bg-white hover:text-black border-2 border-black transition-all duration-300 transform hover:scale-105"
+          className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-white/10 text-white rounded-xl text-base sm:text-lg font-semibold hover:bg-white/30 hover:text-black border border-white/30 transition-all duration-300 transform hover:scale-105"
         >
           View More Projects →
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 
