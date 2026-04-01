@@ -29,19 +29,8 @@ const Footer = () => {
       id="contact"
       className="footer-page relative w-full min-h-screen overflow-hidden flex items-center justify-center px-4 sm:px-6 lg:px-8 py-16"
     >
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#07080b] via-[#030304] to-black" />
-      <div className="absolute -top-32 -left-10 h-96 w-96 rounded-full bg-cyan-400/10 blur-3xl -z-10" />
-      <div className="absolute -bottom-20 -right-14 h-96 w-96 rounded-full bg-rose-400/10 blur-3xl -z-10" />
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:52px_52px]" />
 
-      {/* Blurred Contact Text Background */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
-        <h1 className="text-[14vw] md:text-[10vw] uppercase text-center text-white opacity-[0.06] font-bold tracking-wider">
-          Contact
-        </h1>
-      </div>
-
-      <div className="relative z-20 w-full max-w-6xl rounded-3xl border border-white/15 bg-white/5 backdrop-blur-xl p-6 sm:p-8 lg:p-10">
+      <div className="relative z-20 w-full max-w-6xl rounded-3xl border border-white/15 bg-white/5 p-6 sm:p-8 lg:p-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
           <div>
             <p className="uppercase tracking-[0.25em] text-xs sm:text-sm text-cyan-300/90">Let&apos;s Connect</p>
@@ -87,7 +76,6 @@ const Footer = () => {
 
         <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-slate-400 text-xs sm:text-sm">
           <p>© {new Date().getFullYear()} Vikash Verma. All rights reserved.</p>
-          <p>Built with Next.js, TailwindCSS, and GSAP.</p>
         </div>
       </div>
     </section>

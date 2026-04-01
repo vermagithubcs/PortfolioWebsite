@@ -39,9 +39,7 @@ const techItems = [
 
 const TechStack = () => {
   return (
-    <section id="techStack" className='relative isolate w-full py-16 sm:py-20 px-4 sm:px-6 lg:px-8'>
-      <div className="absolute -top-12 left-6 sm:left-20 h-44 w-44 rounded-full bg-cyan-400/12 blur-3xl pointer-events-none -z-10" />
-      <div className="absolute -bottom-8 right-4 sm:right-16 h-44 w-44 rounded-full bg-rose-400/12 blur-3xl pointer-events-none -z-10" />
+    <section id="techStack" className='relative isolate w-full py-16 sm:py-20 px-4 sm:px-6 lg:px-8 z-0'>
 
       <div className="relative z-10 text-center mb-10 sm:mb-14">
         <p className="uppercase tracking-[0.25em] text-xs sm:text-sm text-cyan-300/85 mb-3">Toolkit</p>
@@ -60,7 +58,7 @@ const TechStack = () => {
           <article
             key={item.name}
             data-tech-card
-            className="group relative min-h-48 sm:min-h-52 rounded-2xl border border-white/15 bg-white/5 backdrop-blur-sm p-4 sm:p-5 flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:border-cyan-300/45 hover:shadow-[0_12px_32px_rgba(34,211,238,0.14)]"
+            className="group relative min-h-48 sm:min-h-52 rounded-2xl border border-white/15 bg-white/5 p-4 sm:p-5 flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:border-cyan-300/45 hover:shadow-[0_12px_32px_rgba(34,211,238,0.14)]"
           >
             <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-b from-cyan-400/10 via-transparent to-transparent" />
 

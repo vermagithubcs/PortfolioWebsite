@@ -13,24 +13,11 @@ const Work = () => {
         "A comprehensive multi-tool web application featuring PDF converters, image compressors, and developer tools",
       tags: ["Next.js", "React", "TailwindCSS"],
       gradient: "from-cyan-500/80 via-cyan-300/20 to-slate-900",
-    },
-    {
-      name: "GTA 6",
-      src: "https://gta-6-sepia.vercel.app/",
-      year: "2025",
-      role: "Frontend + Motion",
-      impact: "Immersive animation-first experience",
-      description:
-        "Interactive gaming website showcase with immersive design and animations",
-      tags: ["React", "GSAP", "WebGL"],
-      gradient: "from-rose-500/80 via-rose-300/20 to-slate-900",
-    },
+    }
   ];
 
   return (
     <section id="works" className="relative w-full min-h-screen py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute -top-16 left-8 h-56 w-56 rounded-full bg-cyan-400/10 blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-20 right-6 h-64 w-64 rounded-full bg-rose-400/10 blur-3xl pointer-events-none" />
 
       {/* Title Section */}
       <div className="text-center mb-12 sm:mb-16 relative z-10">
@@ -44,14 +31,13 @@ const Work = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+      <div className="relative z-10 max-w-2xl mx-auto grid grid-cols-1 gap-6 sm:gap-8">
         {projects.map((project, idx) => (
           <article
             key={project.name}
-            className="group relative rounded-3xl border border-white/15 bg-white/5 overflow-hidden backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:border-cyan-300/45 hover:shadow-[0_16px_40px_rgba(34,211,238,0.2)]"
+            className="group relative rounded-3xl border border-white/15 bg-white/5 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-cyan-300/45 hover:shadow-[0_16px_40px_rgba(34,211,238,0.2)]"
           >
             <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-70 group-hover:opacity-100 transition-opacity duration-500`} />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(255,255,255,0.22),transparent_35%)]" />
 
             <div className="relative z-10 p-6 sm:p-8 min-h-[330px] flex flex-col">
               <div className="flex items-start justify-between gap-4">

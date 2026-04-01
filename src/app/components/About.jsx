@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="about min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full"
+      className="about min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full z-0"
     >
       {/* Heading */}
       <div className="mb-8 sm:mb-12">
@@ -15,7 +15,7 @@ const About = () => {
 
       {/* Description Text */}
       <div className="text-about flex items-center justify-center w-full">
-        <h1 className="big-text text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-center leading-relaxed max-w-5xl px-6 py-8 bg-white/5 border border-white/10 rounded-3xl backdrop-blur-sm text-slate-100">
+        <h1 className="big-text text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-center leading-relaxed max-w-5xl px-6 py-8 bg-white/5 border border-white/10 rounded-3xl text-slate-100">
           {"I'm"} Vikash Verma, a
           <span className="text-cyan-300 font-semibold">
             {" "}
