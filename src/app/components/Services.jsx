@@ -15,9 +15,9 @@ const Services = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 max-w-7xl mx-auto">
         {/* Frontend Development */}
         <div className="bg-white/5 border border-white/12 p-6 sm:p-8 w-full h-auto min-h-[240px] sm:min-h-[260px] flex flex-col items-center justify-center rounded-xl shadow-md shadow-black/40 hover:shadow-cyan-500/10 hover:scale-105 transition duration-300 text-center cursor-pointer">
-          <h2 className="text-xl sm:text-2xl font-semibold text-cyan-300">Frontend Engineer</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold text-cyan-300">Full Stack Developer</h2>
           <p className="mt-3 sm:mt-4 text-sm sm:text-base text-slate-300 leading-relaxed">
-            Building responsive, scalable websites using React.js, Next.js and TailwindCSS.
+            Building responsive, scalable websites using MERN + Next.js.
           </p>
         </div>
 
@@ -31,9 +31,9 @@ const Services = () => {
 
         {/* Three.js Web Experience */}
         <div className="bg-white/5 border border-white/12 p-6 sm:p-8 w-full h-auto min-h-[240px] sm:min-h-[260px] flex flex-col items-center justify-center rounded-xl shadow-md shadow-black/40 hover:shadow-cyan-500/10 hover:scale-105 transition duration-300 text-center cursor-pointer">
-          <h2 className="text-xl sm:text-2xl font-semibold text-amber-300">Three.js Model</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold text-amber-300">Figma Designer</h2>
           <p className="mt-3 sm:mt-4 text-sm sm:text-base text-slate-300 leading-relaxed">
-            Creating immersive 3D experiences using Three.js and WebGL inside your frontend apps.
+            Creating Amazing Web Design for portfolio websites and brand websites.
           </p>
         </div>
       </div>

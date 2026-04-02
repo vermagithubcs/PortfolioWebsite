@@ -66,7 +66,7 @@ const HeroSection = () => {
           </span>
           <span className="hidden sm:flex flex-col leading-none">
             <span className="text-sm font-semibold uppercase tracking-[0.28em] text-white">Vikash Verma</span>
-            <span className="mt-1 text-[11px] uppercase tracking-[0.3em] text-slate-400">Frontend Developer</span>
+            <span className="mt-1 text-[11px] uppercase tracking-[0.3em] text-slate-400">Full Stack Developer</span>
           </span>
         </Link>
 
@@ -101,7 +101,7 @@ const HeroSection = () => {
         <button
           type="button"
           onClick={() => setOpen((value) => !value)}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/[0.08] text-white transition hover:bg-white/15 md:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/[0.08] text-white cursor-pointer transition hover:bg-white/15 md:hidden"
           aria-label="Toggle menu"
           aria-expanded={open}
         >
@@ -128,7 +128,7 @@ const HeroSection = () => {
             <button
               type="button"
               onClick={() => setOpen(false)}
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/[0.08] text-white transition hover:bg-white/15"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/[0.08] text-white transition cursor-pointer hover:bg-white/15"
               aria-label="Close menu"
             >
               <RxCross1 className="text-lg" />

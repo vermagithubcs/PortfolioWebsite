@@ -24,7 +24,7 @@ body {
 }
 
 body {
-	background: linear-gradient(135deg, var(--bg-0), var(--bg-1) 45%, var(--bg-2));
+	background: linear-gradient(135deg, var(--bg-0));
 	color: var(--text-primary);
 	font-family: AtlassianSans, TyproFace, system-ui, sans-serif;
 }
@@ -45,6 +45,5 @@ a {
 }
 
 ::selection {
-	background: rgba(34, 211, 238, 0.3);
 	color: #ffffff;
 }
