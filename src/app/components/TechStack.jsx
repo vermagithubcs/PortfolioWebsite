@@ -58,7 +58,7 @@ const TechStack = () => {
           <article
             key={item.name}
             data-tech-card
-            className="group relative min-h-48 sm:min-h-52 rounded-2xl border border-white/15 bg-white/5 p-4 sm:p-5 flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:border-cyan-300/45 hover:shadow-[0_12px_32px_rgba(34,211,238,0.14)]"
+            className="group relative min-h-48 sm:min-h-52 rounded-2xl border border-white bg-white/5 p-4 sm:p-5 flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:border-cyan-300/45 hover:shadow-[0_12px_32px_rgba(34,211,238,0.14)]"
           >
             <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-b from-cyan-400/10 via-transparent to-transparent" />
 

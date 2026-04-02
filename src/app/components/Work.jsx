@@ -93,7 +93,7 @@ const Work = () => {
           href="https://github.com/vermagithubcs"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-white/10 text-white rounded-xl text-base sm:text-lg font-semibold hover:bg-white/30 hover:text-black border border-white/30 transition-all duration-300 transform hover:scale-105"
+          className="inline-block px-6 sm:px-8 py-3 sm:py-4 text-white rounded-xl text-base sm:text-lg font-semibold hover:bg-blue-600 hover:text-black border border-white transition-all duration-300 transform hover:scale-105"
         >
           View More Projects →
         </a>

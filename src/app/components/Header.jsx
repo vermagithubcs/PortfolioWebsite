@@ -58,7 +58,7 @@ const Header = () => {
               <Link
                 to="works"
                 offset={-90}
-                className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-slate-950 transition-transform duration-300 hover:-translate-y-0.5 hover:bg-blue-600 border border-white/15"
+                className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-slate-950 transition-transform duration-300 hover:-translate-y-0.5 hover:bg-blue-600 border border-white hover:border-none"
               >
                 View Projects
                 <ArrowUpRight className="h-4 w-4" />
@@ -67,7 +67,7 @@ const Header = () => {
               <Link
                 to="contact"
                 offset={-90}
-                className="inline-flex cursor-pointer items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white/90 transition-all duration-300 hover:border-cyan-300/30 hover:bg-white/10 hover:text-white"
+                className="inline-flex cursor-pointer items-center justify-center rounded-full border border-white bg-white/5 px-6 py-3.5 text-sm font-semibold text-white/90 transition-all duration-300 hover:border-cyan-300/30 hover:bg-white/10 hover:text-white"
               >
                 Let’s Talk
               </Link>
@@ -77,7 +77,7 @@ const Header = () => {
               {focusAreas.map((item) => (
                 <span
                   key={item}
-                  className="rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-[11px] sm:text-xs uppercase tracking-[0.2em] text-slate-200/90"
+                  className="rounded-full border border-white bg-white/5 px-3.5 py-1.5 text-[11px] sm:text-xs uppercase tracking-[0.2em] text-slate-200/90"
                 >
                   {item}
                 </span>
@@ -88,7 +88,7 @@ const Header = () => {
               {heroStats.map((stat) => (
                 <div
                   key={stat.label}
-                  className="rounded-2xl border border-white/10 bg-white/[0.04] p-3 shadow-[0_16px_40px_rgba(0,0,0,0.2)]"
+                  className="rounded-2xl border border-white bg-white/[0.04] p-3 shadow-[0_16px_40px_rgba(0,0,0,0.2)]"
                 >
                   <p className="text-xl sm:text-2xl font-semibold text-white">{stat.value}</p>
                   <p className="mt-1.5 text-xs sm:text-sm leading-5 text-slate-300">{stat.label}</p>
@@ -98,7 +98,7 @@ const Header = () => {
           </section>
 
           <aside className="relative lg:pl-4 mt-2 lg:mt-0">
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/12 bg-white/[0.05] p-5 sm:p-6 shadow-[0_24px_80px_rgba(0,0,0,0.35)]">
+            <div className="relative overflow-hidden rounded-[2rem] border border-white bg-white/[0.05] p-5 sm:p-6 shadow-[0_24px_80px_rgba(0,0,0,0.35)]">
 
               <div className="relative z-10 flex items-center justify-between gap-4 border-b border-white/10 pb-4">
                 <div>

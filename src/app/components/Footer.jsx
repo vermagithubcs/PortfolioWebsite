@@ -30,7 +30,7 @@ const Footer = () => {
       className="footer-page relative w-full min-h-screen overflow-hidden flex items-center justify-center px-4 sm:px-6 lg:px-8 py-16"
     >
 
-      <div className="relative z-20 w-full max-w-6xl rounded-3xl border border-white/15 bg-white/5 p-6 sm:p-8 lg:p-10">
+      <div className="relative z-20 w-full max-w-6xl rounded-3xl border border-white/70 bg-white/4 p-6 sm:p-8 lg:p-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
           <div>
             <p className="uppercase tracking-[0.25em] text-xs sm:text-sm text-cyan-300/90">Let&apos;s Connect</p>
@@ -62,10 +62,10 @@ const Footer = () => {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group rounded-2xl border border-white/15 bg-black/30 p-4 sm:p-5 hover:border-cyan-300/50 hover:bg-white/10 transition-all duration-300"
+                className="group rounded-2xl border border-white bg-black/30 p-4 sm:p-5 hover:border-cyan-300/50 hover:bg-white/10 transition-all duration-300"
               >
                 <p className="text-white text-xl sm:text-2xl font-semibold">{item.name}</p>
-                <p className="mt-2 text-slate-300 text-sm">{item.label}</p>
+                <p className="mt-2 text-slate-100 text-sm">{item.label}</p>
                 <span className="mt-4 inline-block text-cyan-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Open Profile
                 </span>
