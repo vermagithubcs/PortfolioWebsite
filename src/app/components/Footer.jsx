@@ -43,7 +43,7 @@ const Footer = () => {
             </p>
 
             <a
-              href="mailto:vikashverma.dev@gmail.com"
+              href="mailto:vermadigital943@gmail.com"
               className="inline-flex mt-7 items-center gap-2 rounded-xl border border-white/30 px-5 py-3 text-white font-semibold hover:bg-white/30 hover:text-black transition-all duration-300"
             >
               Email Me
